@@ -1,11 +1,13 @@
 from django import forms
+from django.forms import TextInput
+from turtle import textinput
 
 
 class FormularioEmpleado(forms.Form):
     CARGOS=(
         (1, "Cheff"),
         (2, "administrador"),
-        (3, "mesero")
+        (3, "mesero"),
         (4, "ayudante")
     )
     
