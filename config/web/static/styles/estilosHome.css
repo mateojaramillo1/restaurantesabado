@@ -21,7 +21,7 @@
 }
 
 .menu{
-    background-color: #136129;
+    background-color: #332f2e;
 }
 
 .zoom{
@@ -52,8 +52,76 @@
 }
 
 .form{
-    background-color: aliceblue;
+    background-color: hsl(12deg 26% 9% / 73%);
     padding: 5%;
+    border-radius: 10%;
+}
+
+label {
+    display: inline-block;
+    color: white;
+}
+.tituloE{
+    color: white;
+}
+
+.btnEmpleado{
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.btnEmpleado:hover{
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.btnEmpleado:active{
+    background-color: rgb(190, 160, 120)  !important;
+    border-color: rgb(190, 160, 120)!important;
+}
+
+.Platos{
+    background-image: url('../img/platos2.jpg');
+    background-position: top center;
+    background-size: cover;
+    z-index: 1;
+    
+}
+
+.Platos::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 140%;
+    background-color: black;
+    opacity: 0.25;
+    z-index: -1;
+}
+.formP{
+    background-color: hsl(12deg 26% 9% / 73%);
+    padding: 5%;
+    border-radius: 10%;
+}
+
+.tituloP{
+    color: white;
+}
+
+.btnPlatos{
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.btnPlatos:hover{
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.btnPlatos:active{
+    background-color: rgb(190, 160, 120)  !important;
+    border-color: rgb(190, 160, 120)!important;
 }
 
 

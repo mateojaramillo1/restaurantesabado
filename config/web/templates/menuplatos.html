@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 </head>
-<body>
+<body class="Platos">
     <header>{% include './shared/menu.html' %}</header>
     
     <br><br><br>
@@ -21,20 +21,128 @@
 
         <div class="container mt-5">
             <div class="row">
-                <div class="col-12 col-md-5">
-                    <img src="../static/img/vegetales.jpg" class="w-100 img-fluid" alt="vegetales">
-                </div>
-                <div class="col-12 col-md-7">
-                    <h2>Registro de platos</h2>
+                <div class="col-12 col-md-12 w-50 mx-auto shadow-lg form">
+                    <h2 class="tituloP">Registro de platos</h2>
                     <form>
                         {{formulario}}
-                        <button type="submit" class="btn btn-primary  w-100">Enviar</button>
+                        <button type="submit" class="btn btn-primary  w-100 btnPlatos">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
 
     </main>
+
+
+</main>
+<footer>
+    <footer>
+      <div class="mt-5 shadow-lg">
+        <footer class="bg-dark text-center text-lg-start text-white shadow-lg">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div
+                  class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                  style="width: 150px; height: 150px">
+                  <img src="https://icgmaster.net/wp-content/uploads/2017/01/Herbario.png" height="175" alt=""
+                    loading="lazy" />
+                </div>
+
+                <p class="text-center"></p>
+
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="text-white px-2" href="https://www.facebook.com/herbario.restaurante">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white ps-2" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Ubicación</h5>
+
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <p class="text-white">
+                      Dirección: Carrera 43D No 10-30, Medellín, Colombia.
+                      Ubicado entre la calle 10 y la 10A, dos cuadras abajo
+                      del Parque del Poblado.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Horarios</h5>
+
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <p class="text-white">
+                      Horarios: Lunes a sábado de 12:00pm a 2:45pm y de 6:00pm
+                      a 10:00pm
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Contactanos</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <p>
+                      <i class="fas fa-map-marker-alt pe-2"></i>
+                      Telefono: (604) 3112537
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-phone pe-2"></i>Whatsapp: (312) 833
+                      0240
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+      <!-- End of .container -->
+    </footer>
+  </footer>
+
     
 </body>
 </html>
