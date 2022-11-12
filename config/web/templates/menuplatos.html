@@ -23,8 +23,9 @@
             <div class="row">
                 <div class="col-12 col-md-12 w-50 mx-auto shadow-lg form">
                     <h2 class="tituloP">Registro de platos</h2>
-                    <form>
+                    <form method="POST">
                         {{formulario}}
+                        {% csrf_token %}
                         <button type="submit" class="btn btn-primary  w-100 btnPlatos">Enviar</button>
                     </form>
                 </div>

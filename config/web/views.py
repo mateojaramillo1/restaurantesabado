@@ -22,6 +22,14 @@ def Platos(request):
     data={
         'formulario':formulario
     }
+
+    #RECIBIMOS LOS DATOS DEL FORMULARIO
+    if request.method == "POST":
+        datosFormulario=FormularioPlatos(request.POST)
+        if datosFormulario.is_valid():
+            datosLimpios=datosFormulario.cleaned_data
+            print(datosLimpios)
+        
     
     return render(request,'menuplatos.html', data)
 
