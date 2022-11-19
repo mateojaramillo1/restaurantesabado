@@ -11,25 +11,55 @@
     <link rel="stylesheet" href="../static/styles/estilosHome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="empleados">
     <header>{% include './shared/menu.html' %}</header>
     
-    <br><br>
-    
+    <br><br><br>
+
+    {%if bandera%}
+    <script>
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
+    </script>
+    {% endif %}
+
+
     <main>
         <div class="container mt-5">
             <div class="row">
                 <div  class="col-12 col-md-12 w-50 mx-auto shadow-lg form">
                     <h2 class="tituloE">Registro de Empleados</h2>
-                    <form>
+                    <form method="POST">
                         {{formulario}}
+                        {% csrf_token %}
                         <button type="submit" class="btn btn-primary  w-100 btnEmpleado">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
+
+        <section>
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 my-4">
+              {%for empleado in empleados%}
+              <div class="col-4 col-md-4 shadow-lg">
+                <div class="card h-100 shadow target">
+                  <img src="{{empleado.foto}}" alt="" class="img-fluid h-100 w-100">
+                  <h1 class="title text-center">{{empleado.nomempleado}} {{empleado.apellidos}}</h1>
+                  <h5 class="text-center descripcion ">Salario: {{empleado.salario}}</h5>
+                </div>
+              </div>
+              {%endfor%}
+            </div>
+          </div>
+      
+        </section>
 
     
     </main>

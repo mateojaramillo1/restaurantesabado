@@ -48,9 +48,16 @@
 
   <section>
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-4">
+      <div class="row row-cols-1 row-cols-md-4 my-4">
         {%for plato in platos%}
-        <h1>{{plato.nombre}}</h1>
+        <div class="col-4 col-md-4 shadow-lg">
+          <div class="card h-100 shadow target">
+            <img src="{{plato.fotografia}}" alt="" class="img-fluid h-100 w-100">
+            <h1 class="title text-center">{{plato.nombre}}</h1>
+            <h5 class="text-center descripcion ">{{plato.descripcion}}</h5>
+            <h5 class="text-center fw-bold precio">Precio: {{plato.precio}}</h5>
+          </div>
+        </div>
         {%endfor%}
       </div>
     </div>

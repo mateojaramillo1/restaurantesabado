@@ -20,6 +20,14 @@
     z-index: -1;
 }
 
+.inicio{
+    background-color: #b7b6b6;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+}
+
 .menu{
     background-color: #332f2e;
 }
@@ -124,4 +132,19 @@ label {
     border-color: rgb(190, 160, 120)!important;
 }
 
+.target{
+    background-color: #281d1a75;
+}
 
+.title{
+    color: white;
+}
+
+
+.descripcion{
+    color: white;
+}
+
+.precio{
+    color: white;
+}
